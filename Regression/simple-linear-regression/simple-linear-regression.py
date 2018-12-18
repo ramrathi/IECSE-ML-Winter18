@@ -6,7 +6,7 @@ data = np.genfromtxt('dataset.txt', delimiter=',')
 print(data)
 
 X = data[:, 0].reshape(-1, 1)
-ones = np.zeros([X.shape[0], 1])
+ones = np.ones([X.shape[0], 1])
 X = np.concatenate((ones, X), axis=1)
 print(X.shape)
 # Shape of X is (data(rows), 2)
